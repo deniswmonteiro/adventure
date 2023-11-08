@@ -6,13 +6,17 @@
 body {
 	margin: 0;
     background-color: var(--blue-1);
+	font-family: var(--font-teko-semibold);
+    color: var(--black);
+	font-weight: 600;
 }
 
 h1,
 h2,
 h3,
 a,
-p {
+p,
+input {
 	margin: 0;
 }
 

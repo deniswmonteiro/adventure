@@ -7,6 +7,56 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header id="sv-header">
+        <nav class="navbar navbar-expand-lg navbar-light pt-0 pb-0">
+            <div class="container-fluid ps-0 pe-0">
+                <a class="navbar-brand" href="/">
+                    <img src="/img/logo.svg" alt="Logo da Survival">
+                </a>
+                <ul class="navbar-nav align-items-end">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">
+                            Our Competitors
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">
+                            For Professionals
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="vr"></li>
+                    <li class="nav-item sv-nav-hidden-item">
+                        <a class="nav-link text-uppercase" href="#">
+                            ENG
+                        </a>
+                    </li>
+                    <li class="nav-item sv-nav-hidden-item">
+                        <a class="nav-link" href="#">
+                            <img src="img/person.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item sv-search"
+                        onmouseenter="window.handleHideMenuItems()"
+                        onmouseleave="window.handleHideMenuItems()">
+                    <form action="#" method="POST"
+                            id="form-search"
+                            onsubmit="window.handleSearchSubmit(event, this)">
+                            <input type="text" id="search" name="search">
+                            <button type="submit">
+                                <img src="img/search.svg" alt="">
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <script type="module" src="js/script.js"></script>
 </body>
 </html>

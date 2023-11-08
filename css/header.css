@@ -1,0 +1,57 @@
+#sv-header li {
+    margin: 0 1.5rem;
+}
+
+#sv-header li:last-child {
+    margin-right: 0;
+}
+
+#sv-header a {
+    color: var(--black);
+}
+
+#sv-header .sv-search {
+    position: relative;
+}
+
+#sv-header .sv-search form {
+    background-color: var(--red);
+    border-radius: 3.125rem;
+}
+
+#sv-header .sv-nav-hidden-item.sv-item-hidden {
+    display: none;
+    opacity: 0;
+    z-index: -1;
+    transition: .5s;
+}
+
+#sv-header .sv-search form input {
+    width: 2.875rem;
+    height: 2.875rem;
+    padding: .375rem .75rem;
+    background: none;
+    border: none;
+    border-radius: 3.125rem;
+    color: var(--red);
+    font-size: 1.2rem;
+    font-family: var(--font-teko-regular) !important;
+    outline: none;
+    transition: .5s;
+}
+
+#sv-header .sv-search:hover input{
+    width: 18.75rem;
+    background-color: var(--red);
+    border-radius: 6px;
+    color: var(--white);
+}
+
+#sv-header .sv-search form button {
+    position: absolute;
+    top: 14px;
+    right: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
