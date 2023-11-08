@@ -1,0 +1,15 @@
+/** VARIABLES */
+* {
+    /** Font */
+    --font-teko-medium: "Teko Medium", Helvetica, Arial, sans-serif;
+    --font-teko-semibold: "Teko SemiBold", Helvetica, Arial, sans-serif;
+    --font-teko-bold: "Teko Bold", Helvetica, Arial, sans-serif;
+    --font-tt-lakes: "TT Lakes", Helvetica, Arial, sans-serif;
+    --font-adevale: "Adevale", serif;
+	
+    /** Colors */
+    --blue-1: #EDF0F2;
+    --red: #E4003B;
+    --black: #000;
+    --white: #FFF;
+}

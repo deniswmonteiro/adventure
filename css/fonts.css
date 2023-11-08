@@ -1,0 +1,27 @@
+/** Teko */
+@font-face {
+    font-family: "Teko Medium";
+    src: url("./fonts/Teko-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Teko SemiBold";
+    src: url("./fonts/Teko-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Teko Bold";
+    src: url("./fonts/Teko-Bold.ttf") format("truetype");
+}
+
+/** TT Lakes */
+@font-face {
+    font-family: "TT Lakes";
+    src: url("./fonts/TT-Lakes-Regular.ttf") format("truetype");
+}
+
+/** Adevale */
+@font-face {
+    font-family: "Adevale";
+    src: url("./fonts/Adevale.ttf") format("truetype");
+}
