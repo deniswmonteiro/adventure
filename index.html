@@ -15,23 +15,23 @@
                 </a>
                 <ul class="navbar-nav align-items-end">
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">
+                        <a class="nav-link text-uppercase sv-item-text" href="#">
                             Our Competitors
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">
+                        <a class="nav-link text-uppercase sv-item-text" href="#">
                             For Professionals
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">
+                        <a class="nav-link text-uppercase sv-item-text" href="#">
                             Contact
                         </a>
                     </li>
                     <li class="vr"></li>
                     <li class="nav-item sv-nav-hidden-item">
-                        <a class="nav-link text-uppercase" href="#">
+                        <a class="nav-link text-uppercase sv-item-text" href="#">
                             ENG
                         </a>
                     </li>
@@ -56,7 +56,86 @@
             </div>
         </nav>
     </header>
+    <section class="container" id="sv-introduction">
+        <p class="sv-introduction-title-2">Find out if you can</p>
+        <div class="row">
+            <div class="col-4 position-relative sv-col-introduction-title">
+                <h1 class="sv-introduction-title-1">Survive</h1>
+                <p class="sv-introduction-text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor.
 
+                    <img src="img/arrow-down.svg" alt="" class="sv-introduction-text-bg">
+                </p>
+                <ul class="sv-social-logos">
+                    <li>
+                        <a href="#">
+                            <img src="img/facebook.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/img/twitter.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/youtube.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-8 sv-col-introduction-carousel">
+                <div id="sv-introduction-carousel" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" class="active"
+                            data-bs-target="#sv-introduction-carousel"
+                            data-bs-slide-to="0"
+                            aria-current="true"
+                            aria-label="Slide 1">
+                            01
+                        </button>
+                        <button type="button"
+                            data-bs-target="#sv-introduction-carousel"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2">
+                            02
+                        </button>
+                        <button type="button"
+                            data-bs-target="#sv-introduction-carousel"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3">
+                            03
+                        </button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/introduction.png" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/introduction.png" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/introduction.png" alt="">
+                        </div>
+                    </div>
+                    <button type="button" class="carousel-control-prev"
+                        data-bs-target="#sv-introduction-carousel"
+                        data-bs-slide="prev">
+                        <img src="img/arrow-left.svg" alt="">
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button type="button" class="carousel-control-next"
+                        data-bs-target="#sv-introduction-carousel"
+                        data-bs-slide="next">
+                        <img src="img/arrow-right.svg" alt="">
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap/bootstrap.min.js"></script>
     <script type="module" src="js/script.js"></script>
 </body>
 </html>

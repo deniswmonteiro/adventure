@@ -1,3 +1,7 @@
+#sv-header {
+    padding: 1.25rem 1rem 1.25rem 8.75rem;
+}
+
 #sv-header li {
     margin: 0 1.5rem;
 }
@@ -8,6 +12,18 @@
 
 #sv-header a {
     color: var(--black);
+    position: relative;
+}
+
+#sv-header a.sv-item-text:hover::after {
+    content: "";
+    width: calc(100% - 1rem);
+    height: 2px;
+    display: inline;
+    background-color: var(--black);
+    position: absolute;
+    left: .5rem;
+    bottom: .375rem;
 }
 
 #sv-header .sv-search {
@@ -43,7 +59,7 @@
 #sv-header .sv-search:hover input{
     width: 18.75rem;
     background-color: var(--red);
-    border-radius: 6px;
+    border-radius: 3.125rem;
     color: var(--white);
 }
 

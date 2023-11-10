@@ -1,0 +1,137 @@
+#sv-introduction {
+    position: relative;
+}
+
+#sv-introduction .sv-col-introduction-title {
+    width: 21.5625rem;
+}
+
+#sv-introduction .sv-col-introduction-carousel {
+    padding-left: 3.125rem;
+}
+
+#sv-introduction .sv-introduction-title-1 {
+    font-family: var(--font-teko-semibold);
+    font-weight: 600;
+    font-size: 11rem;
+    line-height: .7;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    color: var(--red);
+    width: 15.0625rem;
+    margin-top: 4.375rem;
+    margin-left: 4.375rem;
+}
+
+#sv-introduction .sv-introduction-title-2 {
+    font-size: 3.4375rem;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 210px;
+    left: -140px;
+    line-height: 1;
+}
+
+#sv-introduction .sv-social-logos {
+    position: absolute;
+    bottom: 0;
+}
+
+#sv-introduction .sv-social-logos li:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+}
+
+#sv-introduction .sv-introduction-text {
+    height: 15.3125rem;
+    font-family: var(--font-tt-lakes);
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-left: 4.375rem;
+    position: relative;
+}
+
+#sv-introduction .sv-introduction-text .sv-introduction-text-bg {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    z-index: -1;
+    opacity: .8;
+}
+
+#sv-introduction #sv-introduction-carousel {
+    width: 105%;
+}
+
+#sv-introduction #sv-introduction-carousel .carousel-indicators {
+    height: 100%;
+    right: -100px;
+    flex-direction: column;
+    align-items: self-end;
+    gap: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+#sv-introduction #sv-introduction-carousel .carousel-indicators [data-bs-target] {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: var(--font-teko-semibold);
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1;
+    text-indent: 0;
+    width: 3.125rem;
+    height: 3.75rem;
+    border-top: none;
+    border-bottom: none;
+    background-color: transparent;
+}
+
+#sv-introduction #sv-introduction-carousel .carousel-indicators [data-bs-target].active {
+    font-family: var(--font-teko-bold);
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: 1;
+    position: relative;
+}
+
+#sv-introduction #sv-introduction-carousel .carousel-indicators [data-bs-target].active::after {
+    content: "";
+    width: 4.375rem;
+    min-height: 1px;
+    background-color: var(--red);
+    display: inline-block;
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+#sv-introduction #sv-introduction-carousel .carousel-control-prev,
+#sv-introduction #sv-introduction-carousel .carousel-control-next {
+    width: 4.125rem;
+    height: 4.125rem;
+    z-index: 1000;
+    opacity: .7;
+    top: auto;
+    transition: .3s;
+}
+
+#sv-introduction #sv-introduction-carousel .carousel-control-prev:hover,
+#sv-introduction #sv-introduction-carousel .carousel-control-next:hover {
+    opacity: 1;
+    transition: .3s;
+}
+
+#sv-introduction #sv-introduction-carousel .carousel-control-next {
+    background-color: var(--red);
+    bottom: 4.125rem;
+}
+
+#sv-introduction #sv-introduction-carousel .carousel-control-prev {
+    background-color: var(--blue);
+    left: auto;
+    right: 0;
+}

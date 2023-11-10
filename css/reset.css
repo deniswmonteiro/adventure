@@ -5,7 +5,7 @@
 
 body {
 	margin: 0;
-    background-color: var(--blue-1);
+    background-color: var(--blue);
 	font-family: var(--font-teko-semibold);
     color: var(--black);
 	font-weight: 600;
