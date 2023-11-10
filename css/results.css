@@ -1,0 +1,108 @@
+#sv-results {
+    margin-bottom: 9.0625rem;
+}
+
+#sv-results div:first-of-type {
+    align-items: center;
+}
+
+#sv-results h2 {
+    font-size: 8.125rem;
+    line-height: .7;
+    color: var(--white);
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 323px;
+    left: 80px;
+}
+
+#sv-results .sv-results-completed {
+    margin-left: 3.75rem;
+}
+
+#sv-results .sv-results-completed span {
+    display: block;
+    margin-bottom: 3.25rem;
+}
+
+#sv-results .sv-results-completed .sv-results-total {
+    font-size: 280px;
+    line-height: .7;
+    color: var(--red);
+    margin-bottom: 0;
+}
+
+#sv-results .sv-results-completed p {
+    font-size: 3.75rem;
+    line-height: 1;
+    width: 16.5rem;
+    margin-bottom: 1.75rem;
+}
+
+#sv-results .sv-results-completed p span {
+    color: var(--red);
+    display: initial;
+    margin-bottom: 0;
+}
+
+#sv-results .sv-results-share {
+    display: flex;
+    justify-content: center;
+}
+
+#sv-results .sv-results-share .sv-results-bg {
+    position: absolute;
+    bottom: 65px;
+    left: -80px;
+}
+
+#sv-results .sv-results-share .sv-results-share-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 47%;
+    height: 78%;
+    border: 20px solid var(--red);
+    padding: 0 20px 70px 20px;
+    position: absolute;
+}
+
+#sv-results .sv-results-share .sv-results-share-description h3 {
+    font-family: var(--font-teko-medium);
+    font-size: 2.75rem;
+    line-height: .9;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: .5rem;
+}
+
+#sv-results .sv-results-share .sv-results-share-description p {
+    font-family: var(--font-teko-medium);
+    font-size: 1.625rem;
+    line-height: 1;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 3.375rem;
+}
+
+#sv-results .sv-results-share .sv-results-share-description a {
+    color: var(--white);
+}
+
+#sv-results .sv-results-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.25rem;
+    color: var(--black);
+    text-decoration: none;
+}
+
+#sv-results .sv-results-link > img {
+    transform: rotate(0deg);
+    transition: .3s;
+}
+
+#sv-results .sv-results-link:hover > img {
+    transform: rotate(45deg);
+    transition: .3s;
+}
