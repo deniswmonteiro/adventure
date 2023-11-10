@@ -33,12 +33,12 @@
     line-height: 1;
 }
 
-#sv-introduction .sv-social-logos {
+#sv-introduction .sv-introduction-social-logos {
     position: absolute;
     bottom: 0;
 }
 
-#sv-introduction .sv-social-logos li:not(:last-of-type) {
+#sv-introduction .sv-introduction-social-logos li:not(:last-of-type) {
     margin-bottom: 1.5rem;
 }
 

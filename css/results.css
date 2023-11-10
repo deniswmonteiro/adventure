@@ -26,7 +26,7 @@
 }
 
 #sv-results .sv-results-completed .sv-results-total {
-    font-size: 280px;
+    font-size: 17.5rem;
     line-height: .7;
     color: var(--red);
     margin-bottom: 0;
@@ -62,8 +62,8 @@
     justify-content: flex-end;
     width: 47%;
     height: 78%;
-    border: 20px solid var(--red);
-    padding: 0 20px 70px 20px;
+    border: 1.25rem solid var(--red);
+    padding: 0 1.25rem 4.375rem 1.25rem;
     position: absolute;
 }
 
@@ -72,7 +72,7 @@
     font-size: 2.75rem;
     line-height: .9;
     font-weight: 500;
-    color: var(--white);
+    color: var(--blue);
     margin-bottom: .5rem;
 }
 
@@ -81,7 +81,7 @@
     font-size: 1.625rem;
     line-height: 1;
     font-weight: 500;
-    color: var(--white);
+    color: var(--blue);
     margin-bottom: 3.375rem;
 }
 
