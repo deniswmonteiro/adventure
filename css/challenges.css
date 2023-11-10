@@ -1,0 +1,119 @@
+#sv-challenges {
+    margin-bottom: 9.0625rem;
+}
+
+#sv-challenges .sv-challenges-title {
+    font-family: var(--font-teko-semibold);
+    font-size: 3.4375rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 2.375rem;
+}
+
+#sv-challenges .sv-challenges-list li {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+#sv-challenges .sv-challenges-list li:not(:last-of-type) {
+    margin-bottom: 2.5rem;
+}
+
+#sv-challenges .sv-challenges-list li .sv-challenges-image {
+    width: 25rem;
+}
+
+#sv-challenges .sv-challenges-list li span {
+    color: var(--red);
+    line-height: 1.6;
+    margin-bottom: .3125rem;
+}
+
+#sv-challenges .sv-challenges-list li h3 {
+    font-family: var(--font-teko-medium);
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 1.75rem;
+}
+
+#sv-challenges .sv-challenges-list li .sv-challenges-description {
+    font-family: var(--font-tt-lakes);
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.4;
+    margin-bottom: 1.75rem;
+}
+
+#sv-challenges .sv-challenges-highlight-wrapper {
+    position: absolute;
+    top: 35px;
+}
+
+#sv-challenges .sv-challenges-highlight .sv-challenges-highlight-title {
+    font-size: 9.9375rem;
+    line-height: .7;
+    color: var(--white);
+    word-break: break-all;
+    position: relative;
+    padding-left: 2.8125rem;
+}
+
+#sv-challenges .sv-challenges-highlight .sv-challenges-highlight-title span {
+    font-size: 2.8125rem;
+    line-height: 1;
+    color: var(--red);
+    position: absolute;
+    top: -34px;
+    left: 4px;
+}
+
+#sv-challenges .sv-challenges-highlight .sv-challenges-highlight-title p {
+    font-family: var(--font-adevale);
+    font-size: 5.0625rem;
+    line-height: 1.1;
+    text-transform: lowercase;
+    color: var(--red);
+    position: absolute;
+    top: 40px;
+    right: -30px;
+    transform: rotate(-15deg);
+}
+
+#sv-challenges .sv-challenges-highlight .sv-challenges-highlight-image {
+    position: absolute;
+    top: 75px;
+}
+
+#sv-challenges .sv-challenges-highlight .sv-challenges-highlight-description {
+    position: absolute;
+    top: 415px;
+    padding-left: 2.8125rem;
+}
+
+#sv-challenges .sv-challenges-highlight .sv-challenges-highlight-description p {
+    font-family: var(--font-tt-lakes);
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.8;
+    margin-bottom: 1.75rem;
+}
+
+#sv-challenges .sv-challenges-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.25rem;
+    color: var(--black);
+    text-decoration: none;
+}
+
+#sv-challenges .sv-challenges-link > img {
+    transform: rotate(0deg);
+    transition: .3s;
+}
+
+#sv-challenges .sv-challenges-link:hover > img {
+    transform: rotate(45deg);
+    transition: .3s;
+}
