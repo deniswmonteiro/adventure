@@ -1,5 +1,6 @@
 #sv-introduction {
     position: relative;
+    padding-top: 9.5625rem;
     margin-bottom: 6.1875rem;
 }
 
@@ -28,7 +29,7 @@
     font-size: 3.4375rem;
     transform: rotate(-90deg);
     position: absolute;
-    top: 210px;
+    top: 363px;
     left: -140px;
     line-height: 1;
 }
@@ -114,7 +115,7 @@
 #sv-introduction #sv-introduction-carousel .carousel-control-next {
     width: 4.125rem;
     height: 4.125rem;
-    z-index: 1000;
+    z-index: 2;
     opacity: .7;
     top: auto;
     transition: .3s;

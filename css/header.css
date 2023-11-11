@@ -1,5 +1,44 @@
 #sv-header {
+    position: fixed;
     padding: 1.25rem 1rem 1.25rem 8.75rem;
+    clear: both;
+    width: 100%;
+    min-height: 1px;
+    z-index: 1000;
+    transition: .3s ease-out;
+}
+
+#sv-header.header-bg {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--blue);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 2px 4px rgba(0, 0, 0, .2);
+    transition: .3s ease-in;
+}
+
+#sv-header .sv-header-logo {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#sv-header .sv-header-logo svg {
+    transform: scale(1);
+    transition: .3s ease-out;
+}
+
+#sv-header .sv-header-logo.change-logo svg {
+    transform: scale(.7);
+    transition: .3s ease-in;
+}
+
+#sv-header .sv-header-logo svg .sv-header-logo-axes {
+    transition: .3s;
+}
+
+#sv-header .sv-header-logo svg:hover .sv-header-logo-axes {
+    fill: var(--red);
+    opacity: 1;
+    transition: .3s;
 }
 
 #sv-header li {
@@ -18,7 +57,7 @@
 #sv-header a.sv-item-text:hover::after {
     content: "";
     width: calc(100% - 1rem);
-    height: 2px;
+    height: .125rem;
     display: inline;
     background-color: var(--black);
     position: absolute;
@@ -33,13 +72,6 @@
 #sv-header .sv-search form {
     background-color: var(--red);
     border-radius: 3.125rem;
-}
-
-#sv-header .sv-nav-hidden-item.sv-item-hidden {
-    display: none;
-    opacity: 0;
-    z-index: -1;
-    transition: .5s;
 }
 
 #sv-header .sv-search form input {
@@ -57,7 +89,7 @@
 }
 
 #sv-header .sv-search:hover input{
-    width: 18.75rem;
+    width: 15.75rem;
     background-color: var(--red);
     border-radius: 3.125rem;
     color: var(--white);
@@ -70,4 +102,141 @@
     background: none;
     border: none;
     cursor: pointer;
+}
+
+/** MOBILE */
+#sv-btn-mobile {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    #sv-header .sv-nav-hidden-item.sv-item-hidden {
+        display: none;
+        opacity: 0;
+        z-index: -1;
+        transition: .5s;
+    }
+}
+
+@media (max-width: 1399px) {
+    #sv-header {
+        padding: 1.25rem 1rem;
+    }
+
+    #sv-header .sv-search:hover input{
+        width: 12.75rem;
+    }
+}
+
+@media (max-width: 1199px) {
+    #sv-header {
+        padding-top: .625rem;
+        padding-bottom: .625rem;
+    }
+
+    #sv-header .sv-header-logo svg {
+        width: 70%;
+    }
+
+    #sv-header .sv-header-logo.change-logo svg {
+        transform: scale(1);
+    }
+
+    #sv-header #sv-btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #sv-header #sv-icon-hamburger {
+        width: 1.25rem;
+        border-top: 2px solid;
+        display: block;
+        color: var(--red);
+        border-radius: 1px;
+    }
+
+    #sv-header #sv-icon-hamburger::after, #sv-icon-hamburger::before {
+        content: "";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background-color: currentColor;
+        margin-top: 0.375rem;
+        position: relative;
+        border-radius: .25rem;
+        transition: .3s ease-in;
+    }
+
+    #sv-header #sv-btn-mobile.active #sv-icon-hamburger {
+        border-top-color: transparent;
+    }
+
+    #sv-header #sv-btn-mobile.active #sv-icon-hamburger::before {
+        transform: rotate(135deg);
+        background: var(--red);
+    }
+
+    #sv-header #sv-btn-mobile.active #sv-icon-hamburger::after {
+        transform: rotate(-135deg);
+        top: -.5rem;
+        background: var(--red);
+    }
+
+    #sv-header #sv-header-menu {
+        display: block;
+        position: absolute;
+        width: calc(100% + 2rem);
+        height: 0;
+        top: 113px;
+        left: -1rem;
+        background-color: var(--white);
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        transition: .3s ease-out;
+    }
+
+    #sv-header.header-bg #sv-header-menu {
+        top: 103px;
+    }
+
+    #sv-header #sv-header-menu.active {
+        height: calc(100vh - 7.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+        transition: .3s ease-in;
+    }
+
+    #sv-header #sv-header-menu li {
+        margin: .5rem 1rem;
+    }
+
+    #sv-header #sv-header-menu li a {
+        display: inline-block;
+        padding: .5rem;
+    }
+
+    #sv-header #sv-header-menu .vr {
+        transform: rotate(90deg);
+        margin: .5rem 0 0 2rem;
+    }
+
+    #sv-header .sv-search {
+        padding-right: 1rem;
+    }
+    
+    #sv-header .sv-search:hover input{
+        width: 100%;
+    }
+    
+    #sv-header .sv-search form button {
+        right: 32px;
+    }
 }

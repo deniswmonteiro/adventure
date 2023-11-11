@@ -1,0 +1,21 @@
+/** Change scrollbar theme */
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--grey);
+}
+  
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: .625rem;
+}
+  
+*::-webkit-scrollbar-track {
+    background: var(--grey);
+}
+  
+*::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border-radius: 1.25rem;
+    border: 3px solid var(--grey);
+}
