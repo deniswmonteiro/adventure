@@ -177,6 +177,10 @@
 }
 
 @media (max-width: 991px) {
+    #sv-challenges {
+        margin-bottom: 0;
+    }
+
     #sv-challenges .sv-challenges-list li .sv-challenges-image,
     #sv-challenges .sv-challenges-list li .sv-challenges-description {
         width: 100%;
@@ -237,7 +241,7 @@
     }
 
     #sv-challenges .sv-challenges-link > img {
-        width: 20%;
+        width: 26px
     }
 }
 
