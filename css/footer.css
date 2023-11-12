@@ -1,16 +1,26 @@
-#footer {
+#sv-footer {
     padding: 2.625rem 0;
     background: url("/img/footer-bg.jpg") no-repeat center center;
     background-size: cover;
 }
 
-#footer .sv-footer-logo {
+#sv-footer .sv-footer-logo {
     display: flex;
     align-items: center;
     padding-left: 4.375rem;
 }
 
-#footer h3 {
+#sv-footer .sv-footer-logo svg .sv-footer-logo-axes {
+    transition: .3s;
+}
+
+#sv-footer .sv-footer-logo svg:hover .sv-footer-logo-axes {
+    fill: var(--red);
+    opacity: 1;
+    transition: .3s;
+}
+
+#sv-footer h3 {
     font-family: var(--font-teko-medium);
     font-weight: 500;
     font-size: 2rem;
@@ -19,11 +29,11 @@
     margin-bottom: 1rem;
 }
 
-#footer ul:not(.sv-footer-social-logos) li:not(:last-of-type) {
+#sv-footer ul:not(.sv-footer-social-logos) li:not(:last-of-type) {
     margin-bottom: 1rem;
 }
 
-#footer ul:not(.sv-footer-social-logos) li a {
+#sv-footer ul:not(.sv-footer-social-logos) li a {
     font-family: var(--font-tt-lakes);
     font-weight: 400;
     font-size: .875rem;
@@ -34,10 +44,10 @@
     position: relative;
 }
 
-#footer ul:not(.sv-footer-social-logos) li a:hover::after {
+#sv-footer ul:not(.sv-footer-social-logos) li a:hover::after {
     content: "";
     width: calc(100% - .5rem);
-    height: 2px;
+    height: .125rem;
     display: inline;
     background-color: var(--blue);
     position: absolute;
@@ -45,8 +55,45 @@
     bottom: 3px;
 }
 
-#footer .sv-footer-social-logos {
+#sv-footer .sv-footer-social-logos {
     display: flex;
     gap: 1.875rem;
     margin-top: 2.9375rem;
+    margin-left: 20.625rem;
+}
+
+@media (max-width: 1399px) {
+    #sv-footer .sv-footer-logo {
+        padding-left: .75rem;
+    }
+
+    #sv-footer .sv-footer-social-logos {
+        margin-left: 17.875rem;
+    }
+}
+
+@media (max-width: 1199px) {
+    #sv-footer .sv-footer-logo svg {
+        width: 70%;
+    }
+
+    #sv-footer .sv-footer-social-logos {
+        margin-left: 15rem;
+    }
+}
+
+@media (max-width: 991px) {
+    #sv-footer .sv-footer-logo {
+        margin-top: 2.9375rem;
+    }
+
+    #sv-footer .sv-footer-social-logos {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    #sv-footer .sv-footer-content div:not(.sv-footer-logo, :last-of-type) {
+        margin-bottom: 2.5rem;
+    }
 }
