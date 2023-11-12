@@ -1,8 +1,3 @@
-window.onload = () => {
-    changeHeaderBackground();
-    window.addEventListener("scroll", changeHeaderBackground);
-}
-
 /** Handle search form submit */
 window.handleSearchSubmit = (form) => {
     const input = document.querySelector(`#${form.id} input`);
@@ -21,7 +16,7 @@ window.handleHideMenuItems = () => {
 }
 
 /** Change headers background when scroll is above of the title */
-function changeHeaderBackground() {
+export function changeHeaderBackground() {
     const scrollTop = window.scrollY;
     const headerMenu = document.querySelector("#sv-header");
     const headerLogo = document.querySelector(".sv-header-logo");

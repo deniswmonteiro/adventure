@@ -134,6 +134,10 @@
         padding-bottom: .625rem;
     }
 
+    #sv-header .sv-header-logo {
+        margin-left: 1rem;
+    }
+
     #sv-header .sv-header-logo svg {
         width: 70%;
     }
@@ -238,5 +242,15 @@
     
     #sv-header .sv-search form button {
         right: 32px;
+    }
+}
+
+@media (max-width: 575px) {
+    #sv-header .sv-header-logo {
+        margin-left: 0;
+    }
+
+    #sv-header .sv-header-logo svg {
+        width: 60%;
     }
 }
