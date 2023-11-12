@@ -287,6 +287,10 @@
 }
 
 @media (max-width: 575px) {
+    #sv-introduction .sv-introduction-title-1 {
+        font-size: 6.85rem;
+    }
+    
     #sv-introduction #sv-introduction-carousel {
         width: 100%;
     }

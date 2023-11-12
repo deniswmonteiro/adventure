@@ -6,6 +6,7 @@ export function changeIntroductionOrder() {
     else introductionTitle.classList.remove("order-2")
 }
 
+/** Change title position */
 export function insertTitle() {
     const divIntroductionTitle = document.querySelector(".sv-introduction-title-1");
     const introductionTitle = document.querySelector(".sv-introduction-title-2");

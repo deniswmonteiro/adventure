@@ -57,7 +57,7 @@
     color: var(--white);
     word-break: break-all;
     position: relative;
-    padding-left: 2.8125rem;
+    padding-left: 2.5rem;
 }
 
 #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-title span {
@@ -77,18 +77,19 @@
     color: var(--red);
     position: absolute;
     top: 40px;
-    right: -30px;
+    right: -13px;
     transform: rotate(-15deg);
 }
 
 #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-image {
     position: absolute;
-    top: 75px;
+    top: 120px;
+    left: 10px;
 }
 
 #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-description {
     position: absolute;
-    top: 415px;
+    top: 505px;
     padding-left: 2.8125rem;
 }
 
@@ -116,4 +117,145 @@
 #sv-challenges .sv-challenges-link:hover > img {
     transform: rotate(45deg);
     transition: .3s;
+}
+
+@media (max-width: 1399px) {
+    #sv-challenges .sv-challenges-list li h3,
+    #sv-challenges .sv-challenges-list li .sv-challenges-description {
+        margin-bottom: 1rem;
+    }
+
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-title {
+        font-size: 7.95rem;
+    }
+
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-image {
+        top: 95px;
+    }
+
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-title p {
+        font-size: 4.05rem;
+    }
+
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-description {
+        top: 440px;
+    }
+}
+
+@media (max-width: 1199px) {
+    #sv-challenges .sv-challenges-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+    }
+
+    #sv-challenges .sv-challenges-list li .sv-challenges-description {
+        width: 25rem;
+    }
+
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-title {
+        font-size: 9.9375rem;
+    }
+
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-title p {
+        right: 20px;
+        font-size: 5.0625rem;
+    }
+
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-image {
+        width: 80%;
+        top: 130px;
+    }
+
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-description {
+        top: 455px;
+    }
+
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-description p {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    #sv-challenges .sv-challenges-list li .sv-challenges-image,
+    #sv-challenges .sv-challenges-list li .sv-challenges-description {
+        width: 100%;
+    }
+
+    #sv-challenges .sv-challenges-list {
+        margin-bottom: 1.875rem;
+    }
+
+    #sv-challenges .sv-challenges-highlight-wrapper {
+        position: initial;
+    }
+
+    #sv-challenges .sv-challenges-highlight-wrapper::before {
+        content: "";
+        width: 12.5rem;
+        height: 31px;
+        display: block;
+        margin: 0 auto 4.25rem auto;
+        background: url("/img/axes.svg") no-repeat center center;
+        opacity: .5;
+    }
+
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-title {
+        font-size: 7.95rem;
+    }
+
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-title p {
+        font-size: 4.05rem;
+        top: 2px;
+        right: 15px;
+    }
+
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-image {
+        width: 60%;
+        top: 10px;
+        left: 20%;
+    }
+
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-description {
+        top: 365px;
+    }
+}
+
+@media (max-width: 767px) {
+    #sv-challenges .sv-challenges-title {
+        font-size: 2.75rem;
+        margin-bottom: 1.875rem;
+    }
+
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-description {
+        top: 285px;
+        padding-left: 0;
+    }
+
+    #sv-challenges .sv-challenges-link {
+        gap: 1rem;
+    }
+
+    #sv-challenges .sv-challenges-link > img {
+        width: 20%;
+    }
+}
+
+@media (max-width: 575px) {
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-title {
+        font-size: 7.69rem;
+    }
+
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-title p {
+        font-size: 3.05rem;
+    }
+
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-image {
+        position: initial;
+        margin: 0 auto;
+    }
+
+    #sv-challenges .sv-challenges-highlight .sv-challenges-highlight-description {
+        position: initial;
+    }
 }
