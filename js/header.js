@@ -54,3 +54,27 @@ window.toggleMenuMobile = (el) => {
         document.body.style.touchAction = "auto";
     }
 }
+
+/** Animate section */
+export function animateSection() {
+    const sections = document.querySelectorAll(".sv-section");
+    const headerHeight = document.querySelector("#sv-header").clientHeight;
+
+    sections.forEach(section => {
+        const sectionHeight = section.clientHeight;
+        const sectionOffsetTop = section.offsetTop;
+        const scrollTop = window.scrollY;
+        const scrollTopAnimateSection = scrollTop + (window.innerHeight * .75);
+        const scrollTopResulTotal = scrollTop + (window.innerHeight * .4);
+
+        if ((sectionOffsetTop - headerHeight) < scrollTopAnimateSection && ((sectionOffsetTop - headerHeight + sectionHeight)) > scrollTopAnimateSection) {
+            section.classList.add("anime-left");
+        }
+
+        if ((sectionOffsetTop - headerHeight) < scrollTopResulTotal && ((sectionOffsetTop - headerHeight + sectionHeight)) > scrollTopResulTotal) {
+            section.classList.add("section-active");
+        }
+
+        else if (section.classList.contains("section-active")) section.classList.remove("section-active");
+    });
+}

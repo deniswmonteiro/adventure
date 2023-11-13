@@ -20,6 +20,10 @@
     border: 3px solid var(--grey);
 }
 
+.sv-section {
+    opacity: 0;
+}
+
 .bi-facebook,
 .bi-twitter,
 .bi-youtube {
@@ -39,4 +43,18 @@
 .bi-youtube:hover {
     fill: #FF0000;
     transition: .3s;
+}
+
+/** Animation */
+.anime-left {
+    opacity: 0;
+    transform: translateX(-200px);
+    animation: animeLeft .8s forwards;
+}
+
+@keyframes animeLeft {
+    to {
+        opacity: 1;
+        transform: initial;
+    }
 }
