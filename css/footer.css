@@ -1,6 +1,6 @@
 #sv-footer {
     padding: 2.625rem 0;
-    background: url("/img/footer-bg.jpg") no-repeat center center;
+    background: url("../img/footer-bg.jpg") no-repeat center center;
     background-size: cover;
 }
 

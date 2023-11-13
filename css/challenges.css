@@ -200,7 +200,7 @@
         height: 31px;
         display: block;
         margin: 0 auto 4.25rem auto;
-        background: url("/img/axes.svg") no-repeat center center;
+        background: url("../img/icons/axes.svg") no-repeat center center;
         opacity: .5;
     }
 

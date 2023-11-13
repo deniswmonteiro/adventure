@@ -19,3 +19,24 @@
     border-radius: 1.25rem;
     border: 3px solid var(--grey);
 }
+
+.bi-facebook,
+.bi-twitter,
+.bi-youtube {
+    transition: .3s;
+}
+
+.bi-facebook:hover {
+    fill: #0766FF;
+    transition: .3s;
+}
+
+.bi-twitter:hover {
+    fill: #18A2F8;
+    transition: .3s;
+}
+
+.bi-youtube:hover {
+    fill: #FF0000;
+    transition: .3s;
+}
